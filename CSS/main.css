@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    /* COLORS */
+    --ROJO: #e61515;
+    --ROJO2: #891313;
+    --AZUL: #09a8ff;
+    --VERDEB: #a5cd53;
+    --VERDEW: #c1d990;
+    --NEGRO: #444444;
+    --BLANCO: #EDEDED;
+
+    /* FONTS */
+    --cp1: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    --cp2: 'Telefon Black', Sans-Serif;
+    --cp3: 'Telefon', Sans-Serif;
+    --cp4: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    background: rgb(9,168,255);
+    background: linear-gradient(18deg, rgba(9,168,255,1) 0%, rgba(255,255,255,1) 100%);
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #891313;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e61515;
+  }
+
+/*! ESTILOS COMUNES */
+section{
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 50px 0px;
+
+}
+
+/*! NAV & HEADER */
+header{
+    width: 100%;
+    height: auto;
+    padding: 5px 0px;
+    background: rgb(137,19,19);
+}
+
+header .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    max-height: 80px;
+}
+    header .logo a{
+        position: absolute;
+        max-height: inherit;
+    }
+
+        header .logo a img{
+            max-height: inherit;
+        }
+
+    header .logo span{
+        font-family: var(--cp1);
+        letter-spacing: 10px;
+        font-weight: bold;
+        margin: 0px 20px 0px 45px;
+    }
+
+
+
+/*! FOOTER */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100vw;   
+    padding: 5px 0px;
+
+    background: rgb(137,19,19);
+    background: linear-gradient(0deg, rgba(137,19,19,1) 90%, rgba(255,255,255,1) 100%);
+
+    text-align: center;
+}
+
+    footer p{
+        font-family: var(--cp4);
+    }
+
+        footer p a{
+            color: var(--ROJO);
+            text-decoration: none;
+        }
+
+        footer p a:hover{
+            color: red;
+        }

@@ -1,0 +1,97 @@
+.seleccion{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.seleccion .opcion{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: var(--NEGRO);
+
+    margin: 10px 0px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid var(--NEGRO);
+
+}
+
+.seleccion .opcion .opcion-superior{
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    width: 100%;
+    height: 50%;
+    background: rgb(230,21,21);
+    background: radial-gradient(circle, rgba(230,21,21,1) 0%, rgba(137,19,19,1) 100%);
+}
+
+.seleccion .opcion .opcion-inferior{
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    width: 100%;
+    height: 50%;
+    background: rgb(237,237,237);
+    background: radial-gradient(circle, rgba(237,237,237,1) 68%, rgba(68,68,68,1) 100%);
+}
+
+.seleccion .opcion .opcion-medio{
+    position: absolute;
+    border-radius: 10px;
+    width: 310px;
+    background-color: black;
+    border: 2px solid var(--NEGRO);
+    text-align: center;
+
+    overflow: visible;
+
+    height: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+    .seleccion .opcion .opcion-medio div{
+        position: absolute;
+
+        text-align: center;
+        text-decoration: none;
+        font-family: var(--cp4);
+        color: var(--NEGRO);
+
+
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border: 5px solid black;
+        background: rgb(237,237,237);
+        background: radial-gradient(circle, rgba(237,237,237,1) 37%, rgba(68,68,68,1) 100%);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .seleccion .opcion .opcion-medio div span{
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .seleccion .opcion:hover .opcion-medio div span{
+            text-align: center;
+            font-weight: bold;
+            color: brown;
+        }

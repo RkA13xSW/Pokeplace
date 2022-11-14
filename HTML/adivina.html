@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/adivina.css">
+    <link rel="shortcut icon" href="../IMGS/general/pokeplaceIcon.png" type="image/png">
+</head>
+<body onload="startGame()">
+    <!-- <div class="loading">
+        
+    </div> -->
+    <header>
+        <div class="logo">
+            <span>POKE</span>
+            <a href="../."><img src="../IMGS/general/pokeplaceIcon.png" alt="Logo"></a>
+            <span>PLACE</span>
+        </div>
+    </header>
+    <section>
+        <div class="adivina">
+            <h2>Adivina el pokemon!</h2>
+            <div class="descubiertos">
+            </div>
+            <div class="puntuacion">
+                <p>Tiempo............. <span id="tiempo"></span></p>
+                <p>Puntuación......... <span id="puntuacion">0</span></p>
+                <p>Pistas restantes... <span id="pistasCant">10</span></p>
+                <p class="intentos">Intentos........... <strong id="intentos">0</strong> de 3.</p>
+            </div>
+
+            <h4 class="screen">Nombre: <span id="nombre"></span></h4>
+            <div class="pistas screen">
+                <p>Pistas obtenidas:</p>
+                <p>Tipo/s:........... <strong class="interiorPistas" id="pistaTipo">??????</strong></p>
+                <p>Altura y peso:.... <strong class="interiorPistas" id="pistaAlt">??????</strong></p>
+                <p>Mejor Stat:....... <strong class="interiorPistas" id="pistaStat">??????</strong></p>
+            </div>
+
+
+            <div class="pokemon-img">
+                <img id="randomPokemon" src="../IMGS/general/pokeplaceIcon.png" alt="pokemon" class="oculto">
+            </div>
+            <div class="intentos">
+            </div>
+            <div class="controles">
+                <input onchange="intento(this.value)" class="screen" type="text" name="nombreInput" id="nombreInput" placeholder="Respuesta">
+                <button onclick="saltarPokemon()" class="botones" title="Saltar">&#8634;</button>
+                <button onclick="conseguirPista()" class="botones" title="Conseguir pista">&#165;</button>
+            </div>
+            <div class="instrucciones">
+                <p><strong>&#8634;</strong> Para cambiar pokemon. Cuesta un intento.</p>
+                <p><strong>&#165;</strong> Conseguir pista. Cuesta un punto.</p>
+            </div>
+        </div>
+
+        <div class="pantallaFinal">
+            <div class="pantallaFinal-titulo">
+                <h3>Fin de partida</h3>
+            </div>
+                <div class="pantallaFinal-stats screen">
+                    <p>Tiempo............ <span id="PFTiempo"></span></p>
+                    <p>Puntuación........ <span id="PFPuntuacion"></span></p>
+                    <p>Pistas restantes.. <span id="PFPistas"></span></p>
+                    <div class="pantallaFinal-opciones">
+                        <button onclick="location.reload()">Otra partida</button>
+                        <a href="../."><button>Volver</button></a>
+                    </div>
+                </div>
+                <div class="pantallaFinal-descubiertos"></div>
+                
+        </div>
+    </section>
+    <footer>
+        <p>Realizado por: <a target="_blank" href="https://rka13xsw.github.io/portfolio/">Alexandru Cristian Iordache</a></p>
+        <p>Esta aplicación es de uso libre. Información recogida de: <a target="_blank" href="https://pokeapi.co/">PokeAPI</a></p>
+    </footer>
+
+
+
+    <script src="../JS/adivina.js"></script>
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Tipos</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/tablatipos.css">
+    <link rel="shortcut icon" href="../IMGS/general/pokeplaceIcon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>POKE</span>
+            <a href="../."><img id="imagenLogo" src="../IMGS/general/pokeplaceIcon.png" alt="Logo"></a>
+            <span>PLACE</span>
+        </div>
+    </header>
+    <section>
+        <table>
+            <tr>
+                <th>TIPO</th>
+                <th>EFECTIVO</th>
+                <th>NO EFECTIVO</th>
+                <th>DÉBIL CONTRA</th>
+                <th>INMUNE</th>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoAcero"><div class="interiorTipo"><div class="tipo tipoAcero"></div>Acero</div></td>
+                <td>
+                    <div class="tipo tipoHielo"></div>
+                    <div class="tipo tipoRoca"></div>
+                    <div class="tipo tipoHada"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoAcero"></div>
+                    <div class="tipo tipoAgua"></div>
+                    <div class="tipo tipoElectrico"></div>
+                    <div class="tipo tipoFuego"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoRoca"></div>
+                    <div class="tipo tipoFuego"></div>
+                    <div class="tipo tipoLucha"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoVeneno"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoAgua"><div class="interiorTipo"><div class="tipo tipoAgua"></div>Agua</div></td>
+                <td>
+                    <div class="tipo tipoRoca"></div>
+                    <div class="tipo tipoTierra"></div>
+                    <div class="tipo tipoFuego"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoDragon"></div>
+                    <div class="tipo tipoPlanta"></div>
+                    <div class="tipo tipoAgua"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoElectrico"></div>
+                    <div class="tipo tipoPlanta"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoBicho"><div class="interiorTipo"><div class="tipo tipoBicho"></div>Bicho</div></td>
+                <td>
+                    <div class="tipo tipoSiniestro"></div>
+                    <div class="tipo tipoPsiquico"></div>
+                    <div class="tipo tipoPlanta"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoVolador"></div>
+                    <div class="tipo tipoFuego"></div>
+                    <div class="tipo tipoLucha"></div>
+                    <div class="tipo tipoHada"></div>
+                    <div class="tipo tipoVeneno"></div>
+                    <div class="tipo tipoFantasma"></div>
+                    <div class="tipo tipoAcero"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoFuego"></div>
+                    <div class="tipo tipoRoca"></div>
+                    <div class="tipo tipoVolador"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoDragon"><div class="interiorTipo"><div class="tipo tipoDragon"></div>Dragon</div></td>
+                <td>
+                    <div class="tipo tipoDragon"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoAcero"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoHielo"></div>
+                    <div class="tipo tipoHada"></div>
+                    <div class="tipo tipoDragon"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoElectrico"><div class="interiorTipo"><div class="tipo tipoElectrico"></div>Electrico</div></td>
+                <td>
+                    <div class="tipo tipoAgua"></div>
+                    <div class="tipo tipoVolador"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoDragon"></div>
+                    <div class="tipo tipoElectrico"></div>
+                    <div class="tipo tipoPlanta"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoTierra"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoFantasma"><div class="interiorTipo"><div class="tipo tipoFantasma"></div>Fantasma</div></td>
+                <td>
+                    <div class="tipo tipoPsiquico"></div>
+                    <div class="tipo tipoFantasma"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoSiniestro"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoFantasma"></div>
+                    <div class="tipo tipoSiniestro"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoLucha"></div>
+                    <div class="tipo tipoNormal"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoFuego"><div class="interiorTipo"><div class="tipo tipoFuego"></div>Fuego</div></td>
+                <td>
+                    <div class="tipo tipoAcero"></div>
+                    <div class="tipo tipoBicho"></div>
+                    <div class="tipo tipoPlanta"></div>
+                    <div class="tipo tipoHielo"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoDragon"></div>
+                    <div class="tipo tipoFuego"></div>
+                    <div class="tipo tipoRoca"></div>
+                    <div class="tipo tipoAgua"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoAgua"></div>
+                    <div class="tipo tipoTierra"></div>
+                    <div class="tipo tipoRoca"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoHada"><div class="interiorTipo"><div class="tipo tipoHada"></div>Hada</div></td>
+                <td>
+                    <div class="tipo tipoLucha"></div>
+                    <div class="tipo tipoDragon"></div>
+                    <div class="tipo tipoSiniestro"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoAcero"></div>
+                    <div class="tipo tipoVeneno"></div>
+                    <div class="tipo tipoFuego"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoAcero"></div>
+                    <div class="tipo tipoVeneno"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoDragon"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoHielo"><div class="interiorTipo"><div class="tipo tipoHielo"></div>Hielo</div></td>
+                <td>
+                    <div class="tipo tipoVolador"></div>
+                    <div class="tipo tipoPlanta"></div>
+                    <div class="tipo tipoTierra"></div>
+                    <div class="tipo tipoDragon"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoAcero"></div>
+                    <div class="tipo tipoAgua"></div>
+                    <div class="tipo tipoHielo"></div>
+                    <div class="tipo tipoFuego"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoAcero"></div>
+                    <div class="tipo tipoLucha"></div>
+                    <div class="tipo tipoFuego"></div>
+                    <div class="tipo tipoRoca"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoLucha"><div class="interiorTipo"><div class="tipo tipoLucha"></div>Lucha</div></td>
+                <td>
+                    <div class="tipo tipoHielo"></div>
+                    <div class="tipo tipoNormal"></div>
+                    <div class="tipo tipoRoca"></div>
+                    <div class="tipo tipoSiniestro"></div>
+                    <div class="tipo tipoAcero"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoVolador"></div>
+                    <div class="tipo tipoBicho"></div>
+                    <div class="tipo tipoHada"></div>
+                    <div class="tipo tipoPsiquico"></div>
+                    <div class="tipo tipoVeneno"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoPsiquico"></div>
+                    <div class="tipo tipoHada"></div>
+                    <div class="tipo tipoVolador"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoNormal"><div class="interiorTipo"><div class="tipo tipoNormal"></div>Normal</div></td>
+                <td></td>
+                <td>
+                    <div class="tipo tipoAcero"></div>
+                    <div class="tipo tipoRoca"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoLucha"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoFantasma"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoPlanta"><div class="interiorTipo"><div class="tipo tipoPlanta"></div>Planta</div></td>
+                <td>
+                    <div class="tipo tipoTierra"></div>
+                    <div class="tipo tipoRoca"></div>
+                    <div class="tipo tipoAgua"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoAcero"></div>
+                    <div class="tipo tipoDragon"></div>
+                    <div class="tipo tipoVeneno"></div>
+                    <div class="tipo tipoFuego"></div>
+                    <div class="tipo tipoBicho"></div>
+                    <div class="tipo tipoPlanta"></div>
+                    <div class="tipo tipoVolador"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoHielo"></div>
+                    <div class="tipo tipoVolador"></div>
+                    <div class="tipo tipoBicho"></div>
+                    <div class="tipo tipoVeneno"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoPsiquico"><div class="interiorTipo"><div class="tipo tipoPsiquico"></div>Psiquico</div></td>
+                <td>
+                    <div class="tipo tipoLucha"></div>
+                    <div class="tipo tipoVeneno"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoDragon"></div>
+                    <div class="tipo tipoPsiquico"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoBicho"></div>
+                    <div class="tipo tipoFantasma"></div>
+                    <div class="tipo tipoSiniestro"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoRoca"><div class="interiorTipo"><div class="tipo tipoRoca"></div>Roca</div></td>
+                <td>
+                    <div class="tipo tipoHielo"></div>
+                    <div class="tipo tipoVolador"></div>
+                    <div class="tipo tipoBicho"></div>
+                    <div class="tipo tipoFuego"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoAcero"></div>
+                    <div class="tipo tipoLucha"></div>
+                    <div class="tipo tipoTierra"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoAgua"></div>
+                    <div class="tipo tipoPlanta"></div>
+                    <div class="tipo tipoTierra"></div>
+                    <div class="tipo tipoLucha"></div>
+                    <div class="tipo tipoAcero"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoSiniestro"><div class="interiorTipo"><div class="tipo tipoSiniestro"></div>Siniestro</div></td>
+                <td>
+                    <div class="tipo tipoPsiquico"></div>
+                    <div class="tipo tipoSiniestro"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoLucha"></div>
+                    <div class="tipo tipoHada"></div>
+                    <div class="tipo tipoSiniestro"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoLucha"></div>
+                    <div class="tipo tipoBicho"></div>
+                    <div class="tipo tipoHada"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoPsiquico"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoTierra"><div class="interiorTipo"><div class="tipo tipoTierra"></div>Tierra</div></td>
+                <td>
+                    <div class="tipo tipoElectrico"></div>
+                    <div class="tipo tipoRoca"></div>
+                    <div class="tipo tipoFuego"></div>
+                    <div class="tipo tipoVeneno"></div>
+                    <div class="tipo tipoAcero"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoBicho"></div>
+                    <div class="tipo tipoPlanta"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoHielo"></div>
+                    <div class="tipo tipoAgua"></div>
+                    <div class="tipo tipoPlanta"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoElectrico"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoVeneno"><div class="interiorTipo"><div class="tipo tipoVeneno"></div>Veneno</div></td>
+                <td>
+                    <div class="tipo tipoHada"></div>
+                    <div class="tipo tipoPlanta"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoRoca"></div>
+                    <div class="tipo tipoTierra"></div>
+                    <div class="tipo tipoVeneno"></div>
+                    <div class="tipo tipoFantasma"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoTierra"></div>
+                    <div class="tipo tipoPsiquico"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipo-encabezado" id="tipoVolador"><div class="interiorTipo"><div class="tipo tipoVolador"></div>Volador</div></td>
+                <td>
+                    <div class="tipo tipoPlanta"></div>
+                    <div class="tipo tipoBicho"></div>
+                    <div class="tipo tipoLucha"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoElectrico"></div>
+                    <div class="tipo tipoRoca"></div>
+                    <div class="tipo tipoAcero"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoRoca"></div>
+                    <div class="tipo tipoHielo"></div>
+                    <div class="tipo tipoElectrico"></div>
+                </td>
+                <td>
+                    <div class="tipo tipoTierra"></div>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <p>Realizado por: <a target="_blank" href="https://rka13xsw.github.io/portfolio/">Alexandru Cristian Iordache</a></p>
+        <p>Esta aplicación es de uso libre. Información recogida de: <a target="_blank" href="https://pokeapi.co/">PokeAPI</a></p>
+    </footer>
+</body>
+</html>

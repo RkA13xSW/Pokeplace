@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokepedia</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/pokepedia.css">
+    <link rel="shortcut icon" href="../IMGS/general/pokeplaceIcon.png" type="image/png">
+</head>
+<body onload="init()">
+    <header>
+        <div class="logo">
+            <span>POKE</span>
+            <a href="../."><img id="imagenLogo" src="../IMGS/general/pokeplaceIcon.png" alt="Logo"></a>
+            <span>PLACE</span>
+        </div>
+    </header>
+    <section>
+        <div class="controls">
+            <button onclick="toogleFiltros()" title="Mostrar filtros"><img src=".././IMGS/general/filter.png" alt="Filtros"></button>
+            <div>
+                <input oninput="textFilter(this.value)" type="search" name="search" id="search" placeholder="Buscar...">
+            </div>
+        </div>
+        <div class="pokepedia">
+        </div>
+        <button onclick="SiguienteLista()" id="paginacion" title="Mostrar más"><img src="../IMGS/general/plus.png" alt="Mostrar más"></button>
+
+        <div class="filtros-box noVer">
+            <div>
+                <button id="cerrar" onclick="toogleFiltros()">X</button>
+            </div>
+            <div class="campo">
+                <label for="tipos">Tipos</label>
+                <select onchange="typeFilter(this.value)" name="tipos" id="tipos">
+                    <option value="none" selected>Ninguno</option>
+                    <option value="water">Agua</option>
+                    <option value="grass">Planta</option>
+                    <option value="poison">Veneno</option>
+                    <option value="fire">Fuego</option>
+                    <option value="bug">Bicho</option>
+                    <option value="normal">Normal</option>
+                    <option value="flying">Volador</option>
+                    <option value="electric">Electrico</option>
+                    <option value="ground">Tierra</option>
+                    <option value="fairy">Hada</option>
+                    <option value="fighting">Lucha</option>
+                    <option value="psychic">Psíquico</option>
+                    <option value="rock">Roca</option>
+                    <option value="steel">Acero</option>
+                    <option value="ice">Hielo</option>
+                    <option value="ghost">Fantasma</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="dark">Siniestro</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="generacion">GEN</label>
+                <select onchange="genFilter(this.value)" name="generacion" id="generacion">
+                    <option value="0" selected>-</option>
+                    <option value="1">Kanto</option>
+                    <option value="2">Johto</option>
+                    <option value="3">Hoenn</option>
+                    <option value="4">Sinnoh</option>
+                    <option value="5">Unova</option>
+                    <option value="6">Kalos</option>
+                    <option value="7">Alola</option>
+                    <option value="8">Galar</option>
+                </select>
+            </div>
+            <div class="campo">
+                <button onclick="eliminarFiltros()">Eliminar filtros</button>
+            </div>
+        </div>
+        <div class="SLTpokemon noVer">
+            <div class="SLT-menu">
+                <span onclick="tooglePokemon()">X</span>
+            </div>
+            <div class="SLTCon">
+                <div class="SLTContenedorPokemon">
+                    <h3 class="SLT-name">Nombre Pokemon</h3>
+                    <img class="SLTImage" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Pokemon">
+                    <div class="SLTInformacion">
+                        <h4>INFORMACIÓN GENERAL:</h4>
+                        <p>Nº.......... <strong id="SLTNum">10</strong></p>
+                        <p>Peso........ <strong id="SLTPeso">10</strong> kg</p>
+                        <p>Altura...... <strong id="SLTAltura">10</strong> m</p>
+                        <p>Tipo/s...... <strong id="SLTTipo">Planta </strong></p>
+                    </div>
+                </div>
+                <canvas id="SLTStats"></canvas>
+            </div> 
+            <h3>Cadena Evolutiva</h3>
+            <div class="SLTEvoluciones">
+                <div class="SLTEvol">
+                    <h4>Nombre</h4>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Pokemon">
+                </div>
+                <div class="SLTEvol">
+                    <h4>Nombre</h4>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Pokemon">
+                </div>
+                <div class="SLTEvol">
+                    <h4>Nombre</h4>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Pokemon">
+                </div>
+            </div>   
+        </div>
+    </section>
+    <footer>
+        <p>Realizado por: <a target="_blank" href="https://rka13xsw.github.io/portfolio/">Alexandru Cristian Iordache</a></p>
+        <p>Esta aplicación es de uso libre. Información recogida de: <a target="_blank" href="https://pokeapi.co/">PokeAPI</a></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../JS/pokepedia.js"></script>
+</body>
+</html>

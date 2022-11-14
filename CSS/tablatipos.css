@@ -1,0 +1,106 @@
+
+table{
+    width: 100%;
+}
+
+th{
+    background: linear-gradient(15deg, #cad5b5 64%, #dde2d4 70%, #dde2d4 81%, #fff 86%, #dde2d4 89%, #dde2d4 100%);
+    font-family: "Staatliches", cursive;
+    letter-spacing: 2px;
+    text-shadow: rgb(255 255 255 / 30%) -1px 1px;
+    background-blend-mode: hard-light;
+}
+
+table{
+    background: linear-gradient(15deg, #cad5b5 64%, #dde2d4 70%, #dde2d4 81%, #fff 86%, #dde2d4 89%, #dde2d4 100%);
+}
+
+table, th, td {
+    border: groove #757575 3px;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 2px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+td:first-of-type{
+    text-align: end;
+}
+
+section{
+    overflow-x: auto;
+    padding-bottom: 100px;
+}
+
+.interiorTipo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ENCABEZADOS */
+.tipo-encabezado{
+    color: rgba(0, 0, 0, 0.9);
+    text-transform: capitalize;
+    font-size: 1.25em;
+    padding: 2px;
+    font-family: "Staatliches", cursive;
+    letter-spacing: 2px;
+    text-shadow: rgb(255 255 255 / 30%) -1px 1px;
+    align-self: center;
+    background: linear-gradient( 15deg, rgba(128, 128, 128, 0.5) 64%, rgba(138, 138, 138, 0.5) 70%, rgba(230, 230, 230, 0.5) 81%, rgba(255, 255, 255, 0.5) 86%, rgba(220, 220, 220, 0.5) 89%, rgba(230, 230, 230, 0.5) 100% );
+    background-blend-mode: hard-light;
+}
+
+#tipoAgua{background-color: #1689de;}
+#tipoPlanta{background-color: #47a047;}
+#tipoVeneno{background-color: #925192;}
+#tipoFuego{background-color: #cf1414;}
+#tipoBicho{background-color: #b1c967;}
+#tipoNormal{background-color: #bfbfbf;}
+#tipoVolador{background-color: #999ade;}
+#tipoElectrico{background-color: #e6b700;}
+#tipoTierra{background-color: #dea761;}
+#tipoHada{background-color: #dca0ce;}
+#tipoLucha{background-color: #d87c58;}
+#tipoPsiquico{background-color: #fa43b8;}
+#tipoRoca{background-color: #897864;}
+#tipoAcero{background-color: #49769c;}
+#tipoHielo{background-color: #98c3de;}
+#tipoFantasma{background-color: #c195dc;}
+#tipoDragon{background-color: #89315d;}
+#tipoSiniestro{background-color: #282433;}
+
+
+/* LOGOS */
+.tipo{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 10px;
+}
+.tipoAgua{background-image: url(../IMGS/tipos/agua.png);}
+.tipoPlanta{background-image: url(../IMGS/tipos/planta.png);}
+.tipoVeneno{background-image: url(../IMGS/tipos/veneno.png);}
+.tipoFuego{background-image: url(../IMGS/tipos/fuego.png);}
+.tipoBicho{background-image: url(../IMGS/tipos/bicho.png);}
+.tipoNormal{background-image: url(../IMGS/tipos/normal.png);}
+.tipoVolador{background-image: url(../IMGS/tipos/volador.png);}
+.tipoElectrico{background-image: url(../IMGS/tipos/electrico.png);}
+.tipoTierra{background-image: url(../IMGS/tipos/tierra.png);}
+.tipoHada{background-image: url(../IMGS/tipos/hada.png);}
+.tipoLucha{background-image: url(../IMGS/tipos/lucha.png);}
+.tipoPsiquico{background-image: url(../IMGS/tipos/psiquico.png);}
+.tipoRoca{background-image: url(../IMGS/tipos/roca.png);}
+.tipoAcero{background-image: url(../IMGS/tipos/acero.png);}
+.tipoHielo{background-image: url(../IMGS/tipos/hielo.png);}
+.tipoFantasma{background-image: url(../IMGS/tipos/fantasma.png);}
+.tipoDragon{background-image: url(../IMGS/tipos/dragon.png);}
+.tipoSiniestro{background-image: url(../IMGS/tipos/siniestro.png);}

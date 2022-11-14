@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/pokedex.css">
+    <link rel="shortcut icon" href="../IMGS/general/pokeplaceIcon.png" type="image/png">
+</head>
+<body onload="init()">
+    <!-- <div class="loading">
+        
+    </div> -->
+    <header>
+        <div class="logo">
+            <span>POKE</span>
+            <a href="../."><img id="imagenLogo" src="../IMGS/general/pokeplaceIcon.png" alt="Logo"></a>
+            <span>PLACE</span>
+        </div>
+    </header>
+    <section>
+        <div class="pokedex">
+            <div class="carcasa">
+                <div class="carcasa-l"></div>
+                <div class="carcasa-r"></div>
+            </div>
+            <div class="pokedex-pokemon">
+                <div class="pokemon-nombre screen">
+                    <span id="nombrePokemon">Nombre</span>
+                    <span id="numeroPokemon">Nº 1</span>
+                </div>
+                
+                <img class="pokemon-img" id="pokemonPrincipal" src="../IMGS/general/pokeplaceIcon.png" alt="">
+                
+                <div class="pokemon-controles">
+                    <button class="shiny" onclick="toogleShiny()">Shiny</button>
+                    <button class="botones" onclick="toogleBack()">&#8634;</button>
+                </div>
+                
+            </div>
+
+
+            <div class="pokedex-separador">
+                <div class="gap"></div>
+                <div class="hinde"></div>
+                <div class="gap"></div>
+                <div class="hinde"></div>
+                <div class="gap"></div>
+                <div class="hinde"></div>
+                <div class="gap"></div>
+            </div>
+
+
+            <div class="pokedex-informacion">
+                <div class="stats">
+                    <div class="stats-info screen">
+                        <p class="stat-line">HP...........<span class="stat-line-info"></span></p>
+                        <p class="stat-line">Ataque.......<span class="stat-line-info"></span></p>
+                        <p class="stat-line">Defensa......<span class="stat-line-info"></span></p>
+                        <p class="stat-line">Ataque Sp....<span class="stat-line-info"></span></p>
+                        <p class="stat-line">Defensa Sp...<span class="stat-line-info"></span></p>
+                        <p class="stat-line">Velocidad....<span class="stat-line-info"></span></p>
+                        <p class="stat-line">Altura.......<span class="stat-line-info2"></span></p>
+                        <p class="stat-line">Peso.........<span class="stat-line-info2"></span></p>
+                    </div>
+                    <div class="stats-tipos">
+                        <p class="tipos-encabezado">Tipos</p>
+                        <p class="tipo-encabezado noVer" id="tipoAgua">Agua</p>
+                        <p class="tipo-encabezado noVer" id="tipoPlanta">Planta</p>
+                        <p class="tipo-encabezado noVer" id="tipoVeneno">Veneno</p>
+                        <p class="tipo-encabezado noVer" id="tipoFuego">Fuego</p>
+                        <p class="tipo-encabezado noVer" id="tipoBicho">Bicho</p>
+                        <p class="tipo-encabezado noVer" id="tipoNormal">Normal</p>
+                        <p class="tipo-encabezado noVer" id="tipoVolador">Volador</p>
+                        <p class="tipo-encabezado noVer" id="tipoElectrico">Electrico</p>
+                        <p class="tipo-encabezado noVer" id="tipoTierra">Tierra</p>
+                        <p class="tipo-encabezado noVer" id="tipoHada">Hada</p>
+                        <p class="tipo-encabezado noVer" id="tipoLucha">Lucha</p>
+                        <p class="tipo-encabezado noVer" id="tipoPsiquico">Psíquico</p>
+                        <p class="tipo-encabezado noVer" id="tipoRoca">Roca</p>
+                        <p class="tipo-encabezado noVer" id="tipoAcero">Acero</p>
+                        <p class="tipo-encabezado noVer" id="tipoHielo">Hielo</p>
+                        <p class="tipo-encabezado noVer" id="tipoFantasma">Fantasma</p>
+                        <p class="tipo-encabezado noVer" id="tipoDragon">Dragon</p>
+                        <p class="tipo-encabezado noVer" id="tipoSiniestro">Siniestro</p>
+                    </div>
+                </div>
+
+                <div class="prevoluciones">
+                    <div class="prevolucion">
+                        <p>I</p>
+                        <img class="pokemon-img evoluciones-img" src="../IMGS/general/pokeplaceIcon.png" alt="Evolución 1">
+                        <p class="evoluciones-nombres screen">?????</p>
+                    </div>
+                    <div class="prevolucion">
+                        <p>II</p>
+                        <img class="pokemon-img evoluciones-img" src="../IMGS/general/pokeplaceIcon.png" alt="Evolución 2">
+                        <p class="evoluciones-nombres screen">?????</p>
+                    </div>
+                    <div class="prevolucion">
+                        <p>III</p>
+                        <img class="pokemon-img evoluciones-img" src="../IMGS/general/pokeplaceIcon.png" alt="Evolución 3">
+                        <p class="evoluciones-nombres screen">?????</p>
+                    </div>
+                </div>
+                <div class="controles-pokedex">
+                    <button class="control-pokedex botones" onclick="controlesCambioPokemon(-1)"></button>
+                    <div class="control-pokedex">
+                        <input onchange="changeMainPokemon(this.value)" class="screen" type="number" name="id" id="id" min="1" max="898" value="1">
+                    </div>
+                    <button class="control-pokedex botones" onclick="controlesCambioPokemon(+1)"></button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Realizado por: <a target="_blank" href="https://rka13xsw.github.io/portfolio/">Alexandru Cristian Iordache</a></p>
+        <p>Esta aplicación es de uso libre. Información recogida de: <a target="_blank" href="https://pokeapi.co/">PokeAPI</a></p>
+    </footer>
+
+    <script src="../JS/pokedex.js"></script>
+</body>
+</html>

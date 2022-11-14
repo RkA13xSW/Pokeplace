@@ -1,0 +1,198 @@
+
+*{
+    font-family: var(--cp4);
+}
+
+.adivina{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.descubiertos{
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.descubiertos p{
+    width: 100%;
+    text-align: center;
+}
+
+.imagen-descubiertos{
+    height: 80px;
+}
+.puntuacion{
+    font-size: large;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-shadow: #fd5555 -1px 1px;
+    border: inset #9aa28b 3px;
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: var(--NEGRO);
+    cursor: pointer;
+    background: linear-gradient(14deg, #460f0f 0, #891313 30%, #b31818 45%, #fd5555 65%, #b31818 95%);
+}
+
+
+
+
+.pokemon-img {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    image-rendering: pixelated;
+    border: inset #9aa28b 3px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background: linear-gradient(15deg, #cad5b5 64%, #dde2d4 70%, #dde2d4 81%, #fff 86%, #dde2d4 89%, #dde2d4 100%);
+}
+.pokemon-img img{
+    width: 100%;
+}
+
+.oculto{
+    filter: brightness(0%);
+}
+
+.controles{
+    display: flex;
+    flex-direction: row;
+}
+
+.screen {
+    background: linear-gradient(14deg, rgb(165, 205, 83) 60%, rgb(193, 217, 144) 65%);
+    padding: 5px;
+    border-radius: 3px;
+    font-family: "VT323";
+    border: inset #879a65 3px;
+}
+
+
+
+.botones{
+    font-weight: bold;
+    font-size: x-large;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: var(--NEGRO);
+    cursor: pointer;
+    background: linear-gradient(14deg, rgb(165, 205, 83) 60%, rgb(193, 217, 144) 65%);
+    margin-left: 10px;
+}
+
+.pistas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.instrucciones{
+    font-style: italic;
+    font-size: small;
+}
+
+.pantallaFinal{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: #252525da;
+    overflow-y: auto;
+}
+
+.pantallaFinal-titulo{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    background: linear-gradient(14deg, #460f0f 0, #891313 30%, #b31818 45%, #fd5555 65%, #b31818 95%);
+    text-shadow: #fd5555 -1px 1px;
+    border-bottom: inset #9aa28b 3px;
+    border-color: var(--NEGRO); 
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+
+}
+
+.pantallaFinal-stats{
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: x-large;
+}
+.pantallaFinal-opciones button{
+    background-color: transparent;
+    padding: 5px;
+    margin: 5px 0px;
+    border: inset #9aa28b 3px;
+
+}
+
+.pantallaFinal-descubiertos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100vw;
+}
+
+.PFPokemon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    image-rendering: pixelated;
+    border: inset #9aa28b 3px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background: linear-gradient(15deg, #cad5b5 64%, #dde2d4 70%, #dde2d4 81%, #fff 86%, #dde2d4 89%, #dde2d4 100%);
+
+}
+
+.PFPokemon img{
+    width: 80px;
+}
+
+.PFPokemon p{
+    text-transform: capitalize;
+}
+
+
+#nombre{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.noVer{
+    display: none;
+}
